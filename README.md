@@ -1,15 +1,13 @@
-### Unofficial Visual Studio for Linux
+# Linux.NET
 
-**VS for Linux** is a full-featured integrated development environment (IDE) for mono using Gtk# forked from MonoDevelop
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mono/monodevelop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+**Linux.NET** is a full-featured integrated development environment (IDE) for mono using Gtk# forked from MonoDevelop
 
 Directory organization
 ----------------------
 
 There are two main directories:
 
- * `main`: The core MonoDevelop assemblies and add-ins (all in a single
+ * `main`: The core Linux.NET assemblies and add-ins (all in a single
     tarball/package).
  * `extras`: Additional add-ins (each add-in has its own
     tarball/package).
@@ -37,10 +35,9 @@ There are two variables you can set when running `configure`:
 
 * The build profile: `--profile=profile-name`
 
-  * `stable`: builds the MonoDevelop core and some stable extra add-ins.
-  * `core`: builds the MonoDevelop core only.
+  * `stable`: builds the Linux.NET core and some stable extra add-ins.
+  * `core`: builds the Linux.NET core only.
   * `all`: builds everything
-  * `mac`: builds for Mac OS X
 
 **PS:** You can also create your own profile by adding a file to the profiles directory containing a list of the directories to build.
 
@@ -49,13 +46,13 @@ Disclaimer: Please be aware that the 'extras/JavaBinding' and 'extras/ValaBindin
 Running
 -------
 
-You can run VS for Linux from the build directory by executing:
+You can run Linux.NET from the build directory by executing:
 `make run`
 
 Installing *(Optional)*
 ----------
 
-You can install VS for Linux by running:
+You can install Linux.NET by running:
 `make install`
 
 Bear in mind that if you are installing under a custom prefix, you may need to modify your `/etc/ld.so.conf` or `LD_LIBRARY_PATH` to ensure that any required native libraries are found correctly.
@@ -81,7 +78,6 @@ Special Environment Variables
 
 Known Problems
 -----------------------------
-
 ```
 "The type `GLib.IIcon' is defined in an assembly that is not referenced"
 ```
