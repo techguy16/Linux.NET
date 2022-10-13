@@ -1,23 +1,6 @@
-**NOTICE**
--------------
+### Unofficial Visual Studio for Linux
 
-**This project has not been built nor maintained since January 2020 and has been archived**
-
-If you are interested in working on the project, even when archived you can still create a fork of it.
-
-<br/><br/><br/>
-
----
-
-<br/><br/><br/>
-
-
-**MonoDevelop** is a full-featured integrated development environment (IDE) for mono using Gtk#.
-
-The MonoDevelop core is also the foundation for Visual Studio for Mac.
-Feel free to file bugs against Visual Studio for Mac here as well.
-
-See http://www.monodevelop.com for more info.
+**VS for Linux** is a full-featured integrated development environment (IDE) for mono using Gtk# forked from MonoDevelop
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mono/monodevelop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -66,20 +49,13 @@ Disclaimer: Please be aware that the 'extras/JavaBinding' and 'extras/ValaBindin
 Running
 -------
 
-You can run MonoDevelop from the build directory by executing:
+You can run VS for Linux from the build directory by executing:
 `make run`
-
-Debugging
----------
-
-You can debug MonoDevelop using Visual Studio (on Windows or macOS) with the
-`main/Main.sln` solution. Use the `DebugWin32` configuration on Windows and the
-`DebugMac` configuration on macOS.
 
 Installing *(Optional)*
 ----------
 
-You can install MonoDevelop by running:
+You can install VS for Linux by running:
 `make install`
 
 Bear in mind that if you are installing under a custom prefix, you may need to modify your `/etc/ld.so.conf` or `LD_LIBRARY_PATH` to ensure that any required native libraries are found correctly.
@@ -87,19 +63,11 @@ Bear in mind that if you are installing under a custom prefix, you may need to m
 *(It's possible that you need to install for your locale to be
 correctly set.)*
 
-Packaging for OS X
------------------
-
-To package MonoDevelop for OS X in a convenient MonoDevelop.app
-file, just do this after MonoDevelop has finished building (with
-`make`): `cd main/build/MacOSX ; make app`.
-You can run MonoDevelop: `open MonoDevelop.app` or build dmg package: `./make-dmg-bundle.sh`
 
 Dependencies
 ------------
 
-- [Windows](https://github.com/mono/md-website/blob/gh-pages/developers/building-monodevelop.md#prerequisites-and-source)
-- [Unix](http://www.monodevelop.com/developers/building-monodevelop/#linux)
+- [Linux](http://www.monodevelop.com/developers/building-monodevelop/#linux)
 
 Special Environment Variables
 -----------------------------
@@ -135,14 +103,4 @@ References
 
 **[freedesktop.org standards](http://freedesktop.org/Standards/)**
 
-Discussion, Bugs, Patches
--------------------------
-
-monodevelop-list@lists.ximian.com *(questions and discussion)*
-
-monodevelop-patches-list@lists.ximian.com *(track commits to MonoDevelop)*
-
-monodevelop-bugs@lists.ximian.com *(track MonoDevelop bugzilla component)*
-
-https://github.com/mono/monodevelop/issues/new *(submit bugs and patches here)*
 
